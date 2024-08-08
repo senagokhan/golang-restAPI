@@ -1,0 +1,30 @@
+
+
+GET http://localhost:8080/public HTTP/1.1
+
+###
+
+GET http://localhost:8080/private HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjMxMTkxNTIsInVzZXJfaWQiOjJ9._P8EKQ_4LgDqGaRWXCWO3J26zIe3XYneUShssolkzTU
+
+###
+
+POST http://localhost:8080/signup HTTP/1.1
+Content-Type: application/json
+
+{
+   "username": "sena",
+   "email": "gokhansena7",
+   "password": "123456"
+}
+
+###
+
+POST http://localhost:8080/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "gokhansena7",
+  "password": "123456"
+}
+
